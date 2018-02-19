@@ -1,7 +1,8 @@
 # corefpro corpus
 
-Parallel coreference corpus
 ===============================================
+
+Parallel coreference corpus
 
 corefpro corpus is a parallel coreference corpus in English, German and Russian. It was initially developed for experiments with annotation projection.
 
