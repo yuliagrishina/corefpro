@@ -1,6 +1,5 @@
 # corefpro corpus
 
-===============================================
 
 Parallel coreference corpus
 
