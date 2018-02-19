@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/sentence">
+<markable mmax_level="sentence" id="markable_1" span="word_1..word_18"  />
+<markable mmax_level="sentence" id="markable_2" span="word_19..word_35"  />
+<markable mmax_level="sentence" id="markable_3" span="word_36..word_50"  />
+<markable mmax_level="sentence" id="markable_4" span="word_51..word_56"  />
+<markable mmax_level="sentence" id="markable_5" span="word_57..word_67"  />
+<markable mmax_level="sentence" id="markable_6" span="word_68..word_97"  />
+<markable mmax_level="sentence" id="markable_7" span="word_98..word_128"  />
+<markable mmax_level="sentence" id="markable_8" span="word_129..word_149"  />
+<markable mmax_level="sentence" id="markable_9" span="word_150..word_174"  />
+<markable mmax_level="sentence" id="markable_10" span="word_175..word_197"  />
+<markable mmax_level="sentence" id="markable_11" span="word_198..word_230"  />
+<markable mmax_level="sentence" id="markable_12" span="word_231..word_244"  />
+<markable mmax_level="sentence" id="markable_13" span="word_245..word_280"  />
+<markable mmax_level="sentence" id="markable_14" span="word_281..word_325"  />
+<markable mmax_level="sentence" id="markable_15" span="word_326..word_339"  />
+<markable mmax_level="sentence" id="markable_16" span="word_340..word_364"  />
+<markable mmax_level="sentence" id="markable_17" span="word_365..word_370"  />
+<markable mmax_level="sentence" id="markable_18" span="word_371..word_398"  />
+<markable mmax_level="sentence" id="markable_19" span="word_399..word_426"  />
+<markable mmax_level="sentence" id="markable_20" span="word_427..word_456"  />
+<markable mmax_level="sentence" id="markable_21" span="word_457..word_470"  />
+<markable mmax_level="sentence" id="markable_22" span="word_471..word_491"  />
+<markable mmax_level="sentence" id="markable_23" span="word_492..word_519"  />
+<markable mmax_level="sentence" id="markable_24" span="word_520..word_572"  />
+<markable mmax_level="sentence" id="markable_25" span="word_573..word_588"  />
+<markable mmax_level="sentence" id="markable_26" span="word_589..word_611"  />
+<markable mmax_level="sentence" id="markable_27" span="word_612..word_637"  />
+<markable mmax_level="sentence" id="markable_28" span="word_638..word_675"  />
+<markable mmax_level="sentence" id="markable_29" span="word_676..word_690"  />
+<markable mmax_level="sentence" id="markable_30" span="word_691..word_722"  />
+<markable mmax_level="sentence" id="markable_31" span="word_723..word_742"  />
+<markable mmax_level="sentence" id="markable_32" span="word_743..word_753"  />
+<markable mmax_level="sentence" id="markable_33" span="word_754..word_783"  />
+<markable mmax_level="sentence" id="markable_34" span="word_784..word_800"  />
+<markable mmax_level="sentence" id="markable_35" span="word_801..word_819"  />
+<markable mmax_level="sentence" id="markable_36" span="word_820..word_830"  />
+<markable mmax_level="sentence" id="markable_37" span="word_831..word_862"  />
+<markable mmax_level="sentence" id="markable_38" span="word_863..word_878"  />
+</markables>

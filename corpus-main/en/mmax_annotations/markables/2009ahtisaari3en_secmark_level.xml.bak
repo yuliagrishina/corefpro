@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/secmark">
+<markable id="markable_24" span="word_285..word_287" grammatical_role="indir-obj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="pp"  np_form="indefnp" />
+<markable id="markable_79" span="word_631,word_633..word_634" grammatical_role="indir-obj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="pp"  np_form="indefnp" />
+<markable id="markable_63" span="word_647..word_650" grammatical_role="dir-obj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="np"  np_form="indefnp" />
+<markable id="markable_64" span="word_652..word_653" grammatical_role="dir-obj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="np"  np_form="indefnp" />
+<markable id="markable_71" span="word_92..word_97" grammatical_role="sbj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="np"  np_form="indefnp" />
+<markable id="markable_32" span="word_382..word_386" grammatical_role="sbj"  mmax_level="secmark"  referentiality="discourse-new"  ambiguity="not_ambig"  dir_speech="text_level"  complex_np="no"  phrase_type="np"  np_form="indefnp" />
+</markables>
