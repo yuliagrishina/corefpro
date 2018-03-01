@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Extension of the PoCoS scheme with fine grained anaphoric relations: identity, near-identity, bridging -->
+
+<annotationscheme>
+
+<attribute id="level_referentiality" name="referentiality" type="nominal_button" text="Is the markable a referring expression or underspecified with respect to its referentiality ?">
+    <value id="value_ref_unspec" name="not_specified"/>
+    <value id="value_ref_underspec" name="discourse_cataphor"/>
+    <value id="value_ref_ref" name="referring"/>
+    <value id="value_ref_discourse-new" name="discourse-new"/>
+    <value id="value_ref_other" name="other"/>
+</attribute>
+
+<attribute id="level_dir_speech" name="dir_speech" type="nominal_button" text="Is the markable embedded into ordinary text ?">
+    <value id="value_dir_none" name="text_level"/>
+    <value id="value_dir_dir" name="direct_speech"/>
+    <value id="value_dir_indir" name="indirect_speech"/>
+</attribute>
+
+<attribute id="level_phrase_type" name="phrase_type" type="nominal_button" text="NP/PP/clausal/other">
+   <value id="value_phrase_type_np" name="np"/>
+   <value id="value_phrase_type_pp" name="pp"/>
+   <value id="value_phrase_type_other" name="other"/>
+</attribute>
+
+ <attribute id="level_np_form" name="np_form" type="nominal_list" text="Choose noun phrase form!">
+  <value id="value_np_form_none" name="none"/>
+  <value id="value_np_form_NE" name="NE"/>
+  <value id="value_np_form_indefNP" name="indefNP"/>
+  <value id="value_np_form_defNP" name="defNP"/>
+  <value id="value_np_form_PPER" name="PPERS"/>
+  <value id="value_np_form_PPOS" name="PPOS"/>
+  <value id="value_np_form_padv" name="PADV"/>
+  <value id="value_np_form_PDS" name="PDS"/>
+  <value id="value_np_form_rel" name="REL"/>
+  <value id="value_np_form_refl" name="REFL"/>
+  <value id="value_np_form_other" name="other"/> 
+ </attribute>
+
+<attribute id="level_ambiguity" name="ambiguity" type="nominal_list" text="Is the pointing relation ambiguous ?">
+    <value id="value_ambig_not" name="not_ambig"/>
+    <value id="value_ambig_ante" name="ambig_ante"/>
+    <value id="value_ambig_rel" name="ambig_rel"/>
+    <value id="value_ambig_rel_ante" name="ambig_rel_ante"/>
+    <value id="value_ambig_idiom" name="ambig_idiom"/>
+    <value id="value_ambig_expl" name="ambig_expl"/>
+    <value id="value_ambig_other" name="ambig_other"/>
+</attribute>
+
+<attribute id="level_complex-np" name="complex_np" type="nominal_button" text="Is the description complex or not ?">
+    <value id="value_complex_unspec" name="not_specified"/>
+    <value id="value_complex_yes" name="yes"/>
+    <value id="value_complex_no" name="no"/>
+</attribute>
+
+ <attribute id="level_grammatical_role" name="grammatical_role" type="nominal_button" text="">
+  <value id="value_grammatical_role_unspec" name="not_specified"/>
+  <value id="value_grammatical_role_SBJ" name="SBJ"/>
+  <value id="value_grammatical_role_dir-OBJ" name="DIR-OBJ"/>
+  <value id="value_grammatical_role_ind-OBJ" name="INDIR-OBJ"/>
+  <value id="value_grammatical_role_other" name="other"/>
+ </attribute>
+
+<attribute id="level_comment" name="markable_comment" text="Add your comment and own specifications here!" type="freetext">
+        <value id="value_1" name="comment"/>
+</attribute>
+
+
+<!-- Anaphoric relations: 
+		1. Identity: strict identity
+		2. Near-Identity 
+			name-metonymy
+				role
+				location
+				organization
+				informational realization
+				representation
+				other
+			meronymy
+				part-whole
+				entity-attribute
+				set-set
+			spatio-temporal
+				place
+				time
+				numerical function
+				role function
+			other
+		3. Bridging
+			part-whole
+			set-membership
+				set-subset
+				set-element
+			entity-att_func
+				entity-attribute
+				entity-function
+			event-attribute
+			location-attribute
+			other -->
+
+<!-- three pointers. enter types via next -->
+ <attribute id="level_identity" name="identical_antecedent" type="markable_pointer" color="green" width="2" style="lcurve" max_size="" point_to_markable_text="Mark as coreferent/identical" remove_pointer_to_markable_text="Unmark as coreferent">
+  <value id="value_coref_antecedent" name="not_set" />
+  <value id="value_coref_antecedent" name="set"/>
+ </attribute>
+
+ <attribute id="level_near_identity" name="NIDENT_antecedent" type="markable_pointer" color="blue" width="2" style="lcurve" max_size="" point_to_markable_text="Mark as near-identical" remove_pointer_to_markable_text="Unmark as near-identical">
+  <value id="value_nident_antecedent" name="not_set" />
+  <value id="value_nident_antecedent" name="set" next="level_nident_type"/>
+ </attribute>
+ 
+  <attribute id="level_bridging_antecedent" name="Bridging_antecedent" type="markable_pointer" color="red" width="2" style="lcurve" max_size="" point_to_markable_text="Mark as bridging-related" remove_pointer_to_markable_text="Unmark as bridging-related">
+   <value id="value_bridging_antecedent" name="not_set" />
+   <value id="value_bridging_antecedent" name="set" next="level_bridging_type"/>
+  </attribute>
+
+<!-- three main types for near-identity. residual-category "other". enter subtypes ("specify") via next. -->
+ <attribute id="level_nident_type" name="nident_type" type="nominal_list" text="Choose type of relation">
+  <value id="value_type_name_metonymy" name="Name metonymy" next="level_specify_name_metonymy"/>
+  <value id="value_type_meronymy" name ="Meronymy" next="level_specify_meronymy"/>
+  <value id="value_type_spatio_temporal_relation" name="Spatio-temporal relation" next="level_specify_spatio_temporal_relation"/>
+  <value id="value_type_other" name="Other" next="level_specify_nident_other"/>
+ </attribute>
+
+<!-- subtypes name_metonomy -->
+ <attribute id="level_specify_name_metonymy" name="name_metonymy_type" type="nominal_button" text="What kind of name metonymy?">
+     <value id="value_role" name="role"/>
+     <value id="value_location" name="location"/>
+     <value id="value_organization" name="organization"/>
+     <value id="value_information_realization" name="information realization"/>
+     <value id="value_representation" name="representation"/>
+     <value id="value_other" name="other"/>
+ </attribute>
+
+<!-- subtypes meronymy -->
+  <attribute id="level_specify_meronymy" name="meronymy_type" type="nominal_button" text="What kind of name meronymy?">
+      <value id="value_part_whole" name="part-whole"/>
+      <value id="value_stuff_object" name="entity-attribute"/>
+      <value id="value_set_set" name="set-set"/>
+ </attribute>
+ 
+<!-- subtypes spatio/temporal -->
+  <attribute id="level_specify_spatio_temporal_relation" name="spatio_temporal_relation_type" type="nominal_button" text="What kind of spatio temporal relation ?">
+      <value id="value_place" name="place"/>
+      <value id="value_time" name="time"/>
+      <value id="value_numerical_function" name="numerical function"/>
+      <value id="value_role_function" name="role function"/>
+ </attribute>
+ 
+<!-- subtype other -->
+ <attribute id="level_specify_nident_other" name="other_comment" type="freetext" text="What other kind of near-identity-relation?">
+       <value id="value_2" name="comment_other"/>
+ </attribute>
+ 
+<!-- 5 main types for bridging. again residual category other. if there are subtypes, enter via next -->
+  <attribute id="level_bridging_type" name="bridging_type" type="nominal_list" text="Choose type of expression!" >
+   <value id="value_part-whole" name="part-whole" next="bridging_contained"/>
+   <value id="value_type_set-membership" name="set-membership" next="level_specify_set-membership,bridging_contained" />
+   <value id="value_type_entity-att_func" name="entity-att_func" next="level_specify_entity-att_func,bridging_contained"/>
+   <value id="value_event-attribute" name="event-attribute" next="bridging_contained"/> 
+   <value id="value_location-attribute" name="location-attribute" next="bridging_contained"/>
+   <value id="value_type_other" name="other" next="level_specify_bridging_other,bridging_contained" />
+ </attribute>
+
+<!-- subtype set-membership -->
+  <attribute id="level_specify_set-membership" name="specify_set-membership" type="nominal_button" text="Subset or element?">
+      <value id="value_set-subset" name="set-subset" />
+      <value id="value_set-element" name="set-element"/>
+ </attribute>
+
+<!-- subtype entity-att_func -->
+  <attribute id="level_specify_entity-att_func" name="specify_entity-att_func" type="nominal_button" text="Attribut or function?">
+      <value id="value_entity-attribute" name="entity-attribute"/>
+      <value id="value_entity-function" name="entity-function" />
+ </attribute>
+
+<!-- subtype other -->
+ <attribute id="level_specify_bridging_other" name="other_comment" type="freetext" text="What other kind of bridging-relation?">
+       <value id="value_3" name="comment_other"/>
+ </attribute>
+
+<!-- bridging contained --> 
+ <attribute id="bridging_contained" name="bridging_contained" type="nominal_button" text="contained bridging?">
+       <value id="value_false" name="no" />
+       <value id="value_true" name="yes" />
+ </attribute>
+</annotationscheme>
